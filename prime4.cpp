@@ -9,7 +9,6 @@
 //the script to think 5 was divisible by 4 and not prime.
 
 //todo:
-//push the list of primes below the userNum to a vector and print it
 //prime factors
 
 //make a new instance of a class with every prime
@@ -80,10 +79,10 @@ int main() {
             //cout << "Inside the for: factorio: " << factorio << endl;
             if (factorio > 4) {
                 factorioLim = round(factorio/2);
-                primes.push_back(primeTime(factorioLim, factorio));
-                /*for (z = 0; z < primes.size(); z++) {
-                     cout << primes[0];
-                    }*/
+                primes.push_back(primeTime(factorioLim, factorio)); //currently pushes back i
+                for (z = 0; z < primes.size(); z++) {
+                     cout << "The following are prime numbers Ive found :" << primes[z] << endl;
+                    }
             } else {
                 factorioLim = factorio;
                 primes.push_back(primeTime(factorioLim, factorio));
@@ -95,6 +94,12 @@ int main() {
     cin.ignore(100, '\n');
     }
 return 0;
+}
+
+int primeTime2(){
+    int i=0;
+    for
+    return i;
 }
 
 int primeTime(int lim, int userNum){   //need to pass in this vector by ref
